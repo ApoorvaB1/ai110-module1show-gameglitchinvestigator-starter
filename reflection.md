@@ -21,19 +21,13 @@ Document at least 3 bugs you found. Add rows as needed.
 ---
 
 ## 2. How did you use AI as a teammate?
-
-- Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
-- Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
-- Give one example of an AI suggestion you did not accept as written (including what the AI suggested, why you rejected or changed it, and how you verified your version). It does not have to be a suggestion that was wrong: over-engineered, out of scope, harder to read, or a poor fit for this codebase all count.
+ I used AI  to help me debug the broken functions, such as check_guess. At times I would not accept the changes claude was suggesting, because it was going out of the scope that I outlined it too. At other times, the fixes it suggested were not enough to fix the bug, so I would go through the code and highlight lines I see bugs in, and specifically point it out to claude. that bug was the attempt bug, It took multiple suggestions to fix. AI suggested a change in the lines, and then once I kept prompting it, it found the correct line to fix, adding a max() function. I verified the result by running the app again, testing it oout myself. One change that was correct that I accepted was when I was testing PyTest. I couldn't run it at first, due to an error from the import logic_utils line. I prompted claude, and after multiple suggestions, it finally moved the functions being tested from app.py to logic_utils, and the PyTest ran. 
 
 ---
 
 ## 3. Debugging and testing your fixes
 
-- How did you decide whether a bug was really fixed?
-- Describe at least one test you ran (manual or using pytest)  
-  and what it showed you about your code.
-- Did AI help you design or understand any tests? How?
+I ran the app to check if the attempts was fixed, and if the higher and loweer was working the right way. next time, as I write code, I will write tests alongside it, so I can test my code through that without having to run the app every time.
 
 ---
 
