@@ -25,19 +25,18 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [ ] Describe the game's purpose: For users to guess the secret number
+- [ ] Detail which bugs you found: play again button doesn't reset the game, higher and lower are being said oppositelty, attempts don't count till after first attempt, ends game at 1 attempt left, ranges keep automating to 1-100
+- [ ] Explain what fixes you applied: I fixed the attempt counter, and the higher and lower mechanism, and the new game button generates a new number.
 
 ## 📸 Demo Walkthrough
 
-Describe your fixed game in numbered steps so a reader can follow along without watching a video:
-
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+Demo Walkthrough
+1. User selects between Easy, Normal, or Hard difficulty.
+2. Game randomly generates a secret number (e.x., 60).
+3. User guesses a number; the game responds with either "Too High", or "Too Low."
+4. Based on difficulty, user will only get certain number of attempts to guess number before losing game.
+5. User clicks New Game to generate a new secret number and restart.
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 

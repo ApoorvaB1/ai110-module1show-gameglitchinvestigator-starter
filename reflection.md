@@ -1,11 +1,10 @@
 # 💭 Reflection: Game Glitch Investigator
 
-Answer each question in 3 to 5 sentences. Be specific and honest about what actually happened while you worked. This is about your process, not trying to sound perfect.
+This experience really taught me to look closely at what the AI is fixing. I needed to reject certain changes and question the Ai further on it's reasoning, because someimes I was not sure about what it waa doing. I learnt how to fix bugs, use PyTest, and not trust AI as much.
 
 ## 1. What was broken when you started?
 
-- What did the game look like the first time you ran it?
-- List at least two concrete bugs you noticed at the start  
+When I first ran the game , the higher and lower were working oppositely, and I noticed the ranges of the numbers vs what the range should've been wasn't aligned. I also noticed the count of the attempt left was 1 off.
   (for example: "the hints were backwards").
 
 **Bug Reproduction Log**
@@ -14,9 +13,9 @@ Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+| Guess number| Display the correct "Too High" or "Too Low" hint | Hints were reversed | No console error
+| Start game and make guesses|Display the correct number of attempts remaining | Attempt counter was off by 1| no console output|
+| Restart game | Create new number to guess | Gamew was not reset| no console output|
 
 ---
 
@@ -35,11 +34,12 @@ I ran the app to check if the attempts was fixed, and if the higher and loweer w
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
+I learned that Streamlit reruns the entire script when a user used the app, and that the changes you make on the code end become live on streamlit app. I would explain streamlit reruns by saying that it is important to reset the session state when starting a new game, so the user doesn't lose track of progress.
 ---
 
 ## 5. Looking ahead: your developer habits
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
-  - This could be a testing habit, a prompting strategy, or a way you used Git.
-- What is one thing you would do differently next time you work with AI on a coding task?
-- In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+One habit i want to reuse is closely looking into what suggestions AI is changing, and scrutinizing it more. I will continue to develop this skill by asking other ai bots if the suggestion claude is making is the most optimal one, using other chatbots as second opinions. This project changed the way I think about AI generated code as it taught me that it isn't always right.
+
